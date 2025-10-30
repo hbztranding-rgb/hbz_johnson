@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBZ Online Trading Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-section">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="HBZ Logo" class="logo-img">
+      <div class="logo-text">HBZ Online Trading</div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#trade">Buy & Sell</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to HBZ Online Trading</h1>
+    <p>Trusted online marketplace for buying and selling with confidence.</p>
+    <a href="#trade" class="btn">Start Trading</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      HBZ Online Trading Company connects global buyers and sellers through a secure and transparent platform.
+      We specialize in e-commerce, marketing, and delivery services that make online trading smooth and efficient.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Online Marketplace</h3>
+        <p>Buy and sell verified products across different categories.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Promote your products and grow your customer reach with our marketing tools.</p>
+      </div>
+      <div class="card">
+        <h3>Delivery Services</h3>
+        <p>We ensure fast, reliable, and affordable deliveries across Rwanda and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trade" class="trade">
+    <h2>Buy & Sell Products</h2>
+    <p>Choose what you want to do today:</p>
+    <div class="trade-buttons">
+      <a href="#" class="buy-btn">🛒 Buy Products</a>
+      <a href="#" class="sell-btn">💼 Sell Products</a>
+    </div>
+    <p class="note">You’ll soon be able to list items and make orders directly from this section!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@hbztrading.com">info@hbztrading.com</a></p>
+    <p>Phone: +250 780 123 456</p>
+    <p>Location: Kigali, Rwanda</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HBZ Online Trading Company | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+🎨 Step 2 — Updated style.css
+Replace your CSS with this improved version:
+
+css
+Copy code
+/* General */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0a3d62;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0a84d0;
+}
+
+/* Section styles */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #1e90ff;
+}
+
+/* Buy & Sell Section */
+.trade {
+  background-color: #eef4ff;
+}
+
+.trade-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.trade-buttons a {
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buy-btn {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #0a84d0;
+}
+
+.sell-btn {
+  background-color: #0a3d62;
+  color: white;
+}
+
+.sell-btn:hover {
+  background-color: #072e4d;
+}
+
+.note {
+  font-style: italic;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
